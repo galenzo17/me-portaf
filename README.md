@@ -1,38 +1,41 @@
-# create-svelte
+# 🌌 My Little Universe in Svelte & THREE.js 🚀
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome, curious explorer! 🧐 You've just stumbled upon my humble digital sandbox where I dabble in the vastness of 3D with Svelte and THREE.js. Here, you'll find a sketch of my personal portfolio project, a small universe I've crafted, pixel by pixel, line by line, with an enthusiasm that's as bright as a supernova but as humble as the quiet space between stars. 🌟
 
-## Creating a project
+## What's This All About?
 
-If you're seeing this, you've probably already done this step. Congrats!
+In my quest to understand the cosmos of web development and 3D graphics, I've created a little playground using Svelte and THREE.js. Think of it as a mini-universe 🌌, where particles dance, geometries intertwine, and light blooms in unexpected corners. It's a space where I explore the potentials of WebGL and share my journey with anyone who's interested in the magic behind the screen.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### Features
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Orbit Controls**: Navigate through the cosmos with ease. 🛸 Just don't crash into any virtual asteroids!
+- **Particle Systems**: Witness the birth of stars. Or just some cool-looking particles. Same difference, right? ✨
+- **Shader Magic**: Dive deep into the heart of planets with custom shaders that make things glow, move, and occasionally look like they're straight out of a sci-fi movie. 🪐
+- **Interactive Elements**: Click around and see what happens. Maybe you'll discover a new planet, or maybe you'll just enjoy the pretty colors. Exploration is key! 🔍
+- **Humble Animations**: Nothing too flashy, just enough to give life to this digital diorama. 🌠
 
-## Developing
+## Why Share This?
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+I believe in the power of sharing knowledge and growing together. This project is a testament to my ongoing journey in web development and computer graphics, a journey I'm far from completing. I've learned a lot along the way, and if my code can inspire or help someone else on their path, then that's a win in my book! 📚
 
-```bash
-npm run dev
+### Learnings and Challenges
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- **Three.js is Deep**: Seriously, it's like the Mariana Trench of JavaScript libraries. The more you dive, the more wonders (and weird sea creatures) you find.
+- **Svelte is Slick**: It's like the cool side of the pillow but for web development. Comfortable, refreshing, and just... nice.
+- **Shaders Are Tricky**: But once you get the hang of them, you feel like a wizard. 🧙‍♂️ Or a mad scientist. Depends on the day.
 
-## Building
+## Contribute & Connect
 
-To create a production version of your app:
+Got ideas on how to expand this tiny universe? Found a black hole in my code? Let's chat! I'm all ears for feedback, collaboration, or just a good ol' nerdy discussion about web tech and the mysteries of the universe. 🌍🚀
 
-```bash
-npm run build
-```
+- **GitHub**: [[My GitHub](https://github.com/galenzo17)]
+- **LinkedIn**: [[My LinkedIn](https://www.linkedin.com/in/agustin-bereciartua/)]
+- **Carrier Pigeon**: Just kidding. Or am I? 🕊
 
-You can preview the production build with `npm run preview`.
+## Acknowledgments
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+A huge shoutout to the creators and maintainers of THREE.js and Svelte for making such awesome tools accessible. And to you, dear visitor, for sharing a moment of your time in my little digital cosmos. Let's keep exploring and learning together! 🚀💫
+
+---
+
+Remember, the most profound discoveries often come from the humblest of inquiries. Happy coding!
