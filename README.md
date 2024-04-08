@@ -39,3 +39,4 @@ A huge shoutout to the creators and maintainers of THREE.js and Svelte for makin
 ---
 
 Remember, the most profound discoveries often come from the humblest of inquiries. Happy coding!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f95239d7-d892-493a-b693-63d8bbe25366/deploy-status)](https://app.netlify.com/sites/ornate-dusk-d3e7b0/deploys)
