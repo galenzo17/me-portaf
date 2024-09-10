@@ -48,7 +48,7 @@ export class Sketch {
     this.createParticles();
     this.createCheckpoints();
     this.setupEventListeners();
-    //this.addTerrain();
+    this.addTerrain();
     //this.initPostProcessing();
     //window.addEventListener("mousemove", this.onMouseMove, false);
     this.currentlyHovered = null;
