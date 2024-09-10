@@ -19,7 +19,7 @@
   }
   function printCameraInfo() {
     if (sketch) {
-      sketch.printCameraValues();
+      //sketch.printCameraValues();
     }
   }
 </script>
