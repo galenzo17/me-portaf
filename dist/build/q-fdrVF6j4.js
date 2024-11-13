@@ -1,0 +1,1 @@
+import{u as o,_ as a,b as r,L as s}from"./q-C968W40G.js";const l=n=>{const t=o(s);return a("button",{onClick$:n.toggleLanguage},{class:"fixed top-4 right-4 px-4 py-2 bg-gray-800/80 rounded-full hover:bg-purple-500/20 transition-all transform hover:scale-110"},r(e=>e.current==="en"?"🇪🇸 ES":"🇺🇸 EN",[t]),2,"0K_0")};export{l as s_CWNhTEjnom8};
