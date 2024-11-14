@@ -10,7 +10,7 @@ import "./app.css";
 export const App = component$(() => {
   return (
     <LanguageProvider>
-      <div class="min-h-screen w-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
+      <div class="min-h-screen w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
         <MouseFollow />
         <div class="relative z-10">
           <Header />

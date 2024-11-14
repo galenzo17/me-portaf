@@ -12,7 +12,7 @@ export const LanguageToggle = component$<LanguageToggleProps>(
     return (
       <button
         onClick$={toggleLanguage}
-        class="fixed top-4 right-4 px-4 py-2 bg-gray-800/80 rounded-full hover:bg-purple-500/20 transition-all transform hover:scale-110"
+        class="fixed top-4 right-4 px-4 py-2 bg-gray-800/80 rounded-full hover:bg-purple-500/20 transition-all transform hover:scale-110 z-50"
       >
         {languageStore.current === "en" ? "🇪🇸 ES" : "🇺🇸 EN"}
       </button>
