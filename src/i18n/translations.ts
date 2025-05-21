@@ -8,6 +8,26 @@ export const translations = {
     tools: 'Tools & Platforms',
     frameworks: 'Frameworks',
     other: 'Other Skills',
+    servicesTitle: 'Services',
+    servicesIntro: 'I offer software engineering and AI solutions tailored to your needs.',
+    serviceList: [
+      {
+        title: 'AI Solutions',
+        description: 'Design and implementation of machine learning models and automation tools.'
+      },
+      {
+        title: 'Custom Web & Mobile Development',
+        description: 'Creation of applications adapted to your business goals.'
+      },
+      {
+        title: 'API Design & Integration',
+        description: 'Integration of third-party services and development of robust APIs.'
+      },
+      {
+        title: 'Cloud Architecture',
+        description: 'Setup of scalable infrastructure with CI/CD pipelines.'
+      }
+    ],
     companies: {
       buk: {
         role: 'Senior Software Engineer',
@@ -60,6 +80,26 @@ export const translations = {
     tools: 'Herramientas y Plataformas',
     frameworks: 'Frameworks',
     other: 'Otras Habilidades',
+    servicesTitle: 'Servicios',
+    servicesIntro: 'Ofrezco servicios de ingeniería de software e IA adaptados a tus necesidades.',
+    serviceList: [
+      {
+        title: 'Soluciones de IA',
+        description: 'Diseño e implementación de modelos de machine learning y herramientas de automatización.'
+      },
+      {
+        title: 'Desarrollo Web y Móvil a Medida',
+        description: 'Aplicaciones creadas según los objetivos de tu negocio.'
+      },
+      {
+        title: 'Diseño e Integración de APIs',
+        description: 'Integración de servicios de terceros y desarrollo de APIs robustas.'
+      },
+      {
+        title: 'Arquitectura en la Nube',
+        description: 'Configuración de infraestructura escalable con pipelines CI/CD.'
+      }
+    ],
     companies: {
       buk: {
         role: 'Ingeniero de Software Senior',
