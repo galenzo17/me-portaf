@@ -20,7 +20,7 @@ export const MouseFollow = component$(() => {
     <div
       class="pointer-events-none fixed inset-0 z-30 transition duration-300"
       style={{
-        background: `radial-gradient(600px at ${mouseX.value}px ${mouseY.value}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        background: `radial-gradient(600px at ${mouseX.value}px ${mouseY.value}px, rgba(139, 92, 246, 0.2), transparent 80%)`,
       }}
     />
   );
