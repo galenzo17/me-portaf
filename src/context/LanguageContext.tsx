@@ -4,8 +4,7 @@ import {
   Slot,
   useContextProvider,
   useStore,
-  $,
-  useVisibleTask$,
+  $
 } from "@builder.io/qwik";
 import { LanguageToggle } from "../components/LanguageToggle";
 
@@ -27,9 +26,6 @@ export const LanguageProvider = component$(() => {
     store.current = store.current === "en" ? "es" : "en";
   });
 
-  useVisibleTask$(() => {
-    store.current = navigator.language.startsWith("es") ? "es" : "en";
-  });
 
   useContextProvider(LanguageContext, store);
 
