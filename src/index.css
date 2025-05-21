@@ -91,3 +91,44 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
+/* Neon glow text effect */
+.neon-text {
+  color: #e879f9;
+  text-shadow:
+    0 0 5px #f0abfc,
+    0 0 10px #e879f9,
+    0 0 20px #db2777;
+  animation: neon-flicker 1.5s infinite alternate;
+}
+
+@keyframes neon-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* Neon particle effect */
+.neon-particle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #d946ef;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px #d946ef, 0 0 16px #d946ef;
+  opacity: 0.8;
+  animation: particle-fade 0.8s linear forwards;
+}
+
+@keyframes particle-fade {
+  to {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Neon glow using drop-shadow for gradient text */
+.neon-glow {
+  filter: drop-shadow(0 0 6px #e879f9) drop-shadow(0 0 12px #e879f9);
+  animation: neon-flicker 1.5s infinite alternate;
+}
