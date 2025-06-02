@@ -6,6 +6,7 @@ import { Skills } from "./components/Skills";
 import { SocialLinks } from "./components/SocialLinks";
 import { MouseFollow } from "./components/MouseFollow";
 import { ZoomCanvas } from "./components/ZoomCanvas";
+import { AsciiOcean } from "./components/AsciiOcean";
 import "./app.css";
 
 export const App = component$(() => {
@@ -14,6 +15,7 @@ export const App = component$(() => {
       <ZoomCanvas>
         <div class="min-h-screen w-full bg-gradient-to-br from-gray-900 to-gray-800 text-white relative overflow-hidden">
           <MouseFollow />
+          <AsciiOcean />
           <div class="relative z-10">
             <Header />
             <Experience />
