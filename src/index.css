@@ -91,3 +91,20 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
+/* ASCII ocean effect */
+.ascii-ocean {
+  font-family: monospace;
+  z-index: 5;
+}
+
+.ascii-island {
+  position: absolute;
+  white-space: pre;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
