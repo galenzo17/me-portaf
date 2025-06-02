@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { LanguageProvider } from "./context/LanguageContext";
 import { Header } from "./components/Header";
 import { Experience } from "./components/Experience";
+import { ExperienceMap } from "./components/ExperienceMap";
 import { Skills } from "./components/Skills";
 import { SocialLinks } from "./components/SocialLinks";
 import { MouseFollow } from "./components/MouseFollow";
@@ -14,6 +15,7 @@ export const App = component$(() => {
         <MouseFollow />
         <div class="relative z-10">
           <Header />
+          <ExperienceMap />
           <Experience />
           <Skills />
           <SocialLinks />
