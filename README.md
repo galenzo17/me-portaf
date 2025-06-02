@@ -1,38 +1,48 @@
-# Qwik + Vite
+# Personal Portfolio
 
-## Qwik in CSR mode
+This project is a personal portfolio built with [Qwik](https://qwik.dev/) and Vite. It presents my professional background, skills and contact links in a single page application.
 
-This starter is using a pure CSR (Client Side Rendering) mode. This means, that the application is fully bootstrapped in the browser. Most of Qwik innovations however take advantage of SSR (Server Side Rendering) mode.
+## Sections
 
-```ts
-export default defineConfig({
-  plugins: [
-    qwikVite({
-      csr: true,
-    }),
-  ],
-})
-```
+- **Header** – Name and contact information.
+- **Professional Experience** – Companies, roles and main tasks.
+- **Technical Skills** – Languages, databases, tools and frameworks.
+- **Social Links** – Quick access to GitHub and LinkedIn.
+- **Language Toggle** – Switch between English and Spanish.
+- **Interactive Effects** – A background that follows the mouse cursor.
 
-Use `npm create qwik@latest` to create a full production ready Qwik application, using SSR and [QwikCity](https://qwik.dev/docs/qwikcity/), our server-side metaframwork.
+## Getting Started
 
-## Usage
+1. Install dependencies:
 
 ```bash
-$ npm install # or pnpm install or yarn install
+npm install
 ```
 
-Learn more on the [Qwik Website](https://qwik.dev) and join our community on our [Discord](https://qwik.dev/chat)
+2. Run the development server:
 
-## Available Scripts
+```bash
+npm run dev
+```
 
-In the project directory, you can run:
+Open `http://localhost:5173` to view the site.
 
-### `npm run dev`
+3. Create a production build:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+```bash
+npm run build
+```
 
-### `npm run build`
+The build output is stored in the `dist` folder.
 
-Builds the app for production to the `dist` folder.<br>
+## Tech Stack
+
+- Qwik + Vite
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## Deployment
+
+The project can be deployed on Netlify using the provided `netlify.toml` configuration.
+
