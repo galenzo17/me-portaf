@@ -1,6 +1,7 @@
 import { component$, useContext } from '@builder.io/qwik';
 import { LanguageContext } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import { ThreeCube } from './ThreeCube';
 
 export const Header = component$(() => {
   const languageStore = useContext(LanguageContext);
@@ -21,6 +22,9 @@ export const Header = component$(() => {
         <a href="tel:+5693570521" class="hover:text-purple-400 transition-colors">
           📱 +569 3570 5212
         </a>
+      </div>
+      <div class="mx-auto mt-6 w-full max-w-md">
+        <ThreeCube />
       </div>
     </header>
   );
