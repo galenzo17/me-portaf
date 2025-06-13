@@ -9,6 +9,16 @@ export const Header = component$(() => {
   return (
     <header class="text-center mb-16 animate-slide-down relative pt-6">
       <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl -z-10 transform-gpu"></div>
+      <div class="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
+        <div class="book-walker">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="3" width="6" height="10" fill="#ffffff" stroke="#000000" stroke-width="1" />
+            <rect x="9" y="3" width="6" height="10" fill="#ffffff" stroke="#000000" stroke-width="1" />
+            <rect x="3" y="13" width="2" height="2" fill="#000000" />
+            <rect x="11" y="13" width="2" height="2" fill="#000000" />
+          </svg>
+        </div>
+      </div>
       <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
         Agustín Bereciartúa Castillo
       </h1>
