@@ -14,11 +14,21 @@ export const Header = component$(() => {
       </h1>
       <p class="text-2xl text-gray-300 mb-4">{t.role}</p>
       <div class="flex justify-center gap-4 text-gray-300">
-        <a href="mailto:bereciartua.agustin@gmail.com" class="hover:text-purple-400 transition-colors">
+        <a
+          href="mailto:bereciartua.agustin@gmail.com"
+          class="hover:text-purple-400 transition-colors"
+        >
           📧 bereciartua.agustin@gmail.com
         </a>
         <span>|</span>
-        <a href="tel:+5693570521" class="hover:text-purple-400 transition-colors">
+        <a href="/services.html" class="hover:text-purple-400 transition-colors">
+          {t.servicesTitle}
+        </a>
+        <span>|</span>
+        <a
+          href="tel:+5693570521"
+          class="hover:text-purple-400 transition-colors"
+        >
           📱 +569 3570 5212
         </a>
       </div>
