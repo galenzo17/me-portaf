@@ -13,9 +13,22 @@ interface Experience {
 
 const getExperiences = (lang: "en" | "es"): Experience[] => [
   {
+    company: "Bitua.io",
+    url: "https://bitua.io/",
+    period: lang === "en" ? "December 2024 - Present" : "Diciembre 2024 - Actualidad",
+    role: translations[lang].companies.bitua.role,
+    description: translations[lang].companies.bitua.description,
+    stack: [
+      "Bun",
+      "Go",
+      "Docker",
+      "Machine Learning",
+    ],
+  },
+  {
     company: "Buk",
     url: "https://buk.cl/",
-    period: lang === "en" ? "May 2022 - Present" : "Mayo 2022 - Actualidad",
+    period: lang === "en" ? "May 2022 - December 2024" : "Mayo 2022 - Diciembre 2024",
     role: translations[lang].companies.buk.role,
     description: translations[lang].companies.buk.description,
     stack: [
