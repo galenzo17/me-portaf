@@ -6,7 +6,10 @@ export default defineConfig({
   plugins: [qwikVite({ client: { input: "src/main.tsx" } })],
   build: {
     rollupOptions: {
-      input: "index.html",
+      input: {
+        main: "index.html",
+        games: "games/index.html",
+      },
     },
   },
 });

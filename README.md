@@ -10,6 +10,7 @@ This project is a personal portfolio built with [Qwik](https://qwik.dev/) and Vi
 - **Social Links** – Quick access to GitHub and LinkedIn.
 - **Language Toggle** – Switch between English and Spanish.
 - **Interactive Effects** – A background that follows the mouse cursor.
+- **Games Page** – `/games` shows floating links to example GitHub games.
 
 ## Getting Started
 

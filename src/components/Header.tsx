@@ -21,6 +21,10 @@ export const Header = component$(() => {
         <a href="tel:+5693570521" class="hover:text-purple-400 transition-colors">
           📱 +569 3570 5212
         </a>
+        <span>|</span>
+        <a href="/games/" class="hover:text-purple-400 transition-colors">
+          🕹 Games
+        </a>
       </div>
     </header>
   );
