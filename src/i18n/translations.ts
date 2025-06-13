@@ -29,6 +29,14 @@ export const translations = {
       }
     ],
     companies: {
+      bitua: {
+        role: 'Senior Software Engineer',
+        description: [
+          'Building medical device applications using Bun and Go',
+          'Developing AI solutions for healthcare data',
+          'Leading system architecture and infrastructure'
+        ]
+      },
       buk: {
         role: 'Senior Software Engineer',
         description: [
@@ -101,6 +109,14 @@ export const translations = {
       }
     ],
     companies: {
+      bitua: {
+        role: 'Ingeniero de Software Senior',
+        description: [
+          'Construcci\u00f3n de aplicaciones para dispositivos m\u00e9dicos con Bun y Go',
+          'Desarrollo de soluciones de IA para datos de salud',
+          'Liderando arquitectura e infraestructura de sistemas'
+        ]
+      },
       buk: {
         role: 'Ingeniero de Software Senior',
         description: [
