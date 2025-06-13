@@ -15,19 +15,24 @@ export const Header = component$(() => {
     return () => window.removeEventListener('scroll', onScroll);
   });
 
+  const headerClasses = `text-center mb-16 animate-slide-down transition-all duration-300 ${
+    isSticky.value ? 'fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-sm py-2 z-40' : 'relative pt-6'
+  }`;
+  const gradientClasses = `absolute inset-0 -z-10 transform-gpu ${
+    isSticky.value ? 'hidden' : 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl'
+  }`;
+  const titleClasses = `font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 ${
+    isSticky.value ? 'text-2xl' : 'text-5xl'
+  }`;
+  const roleClasses = `text-gray-300 mb-4 transition-opacity duration-300 ${
+    isSticky.value ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 text-2xl'
+  }`;
+
   return (
-    <header
-      class={`text-center mb-16 animate-slide-down transition-all duration-300 ${isSticky.value ? 'fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-sm py-2 z-40' : 'relative pt-6'}`}
-    >
-      <div
-        class={`absolute inset-0 -z-10 transform-gpu ${isSticky.value ? 'hidden' : 'bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl'}`}
-      ></div>
-      <h1
-        class={`font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600 ${isSticky.value ? 'text-2xl' : 'text-5xl'}`}
-      >
-        Agustín Bereciartúa Castillo
-      </h1>
-      <p class={`text-gray-300 mb-4 transition-opacity duration-300 ${isSticky.value ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100 text-2xl'}`}>{t.role}</p>
+    <header class={headerClasses}>
+      <div class={gradientClasses}></div>
+      <h1 class={titleClasses}>Agustín Bereciartúa Castillo</h1>
+      <p class={roleClasses}>{t.role}</p>
       <div class="flex justify-center flex-wrap gap-4 text-gray-300">
         <a href="mailto:bereciartua.agustin@gmail.com" class="hover:text-purple-400 transition-colors">
           <span class={isSticky.value ? '' : 'sm:hidden'}>📧</span>
