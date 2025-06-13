@@ -91,3 +91,28 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
+
+@keyframes bookWalk {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+.book-walker {
+  width: 24px;
+  height: 24px;
+  animation: bookWalk 0.8s steps(2) infinite;
+  position: relative;
+  pointer-events: none;
+}
+
+.book-walker svg {
+  width: 100%;
+  height: 100%;
+  shape-rendering: crispEdges;
+  image-rendering: pixelated;
+}
