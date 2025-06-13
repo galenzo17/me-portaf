@@ -48,7 +48,7 @@ export const Header = component$(() => {
           <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>📧</span>
           <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>📧 bereciartua.agustin@gmail.com</span>
         </a>
-        <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`>|</span>
+        <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`}>|</span>
         <a
           href="/services.html"
           aria-label="Services"
@@ -57,7 +57,7 @@ export const Header = component$(() => {
           <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>🛠️</span>
           <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>{t.servicesTitle}</span>
         </a>
-        <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`>|</span>
+        <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`}>|</span>
         <a
           href="tel:+56935705212"
           aria-label="Call phone"
