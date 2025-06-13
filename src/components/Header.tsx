@@ -8,10 +8,16 @@ export const Header = component$(() => {
   const isSticky = useSignal(false);
 
   useVisibleTask$(() => {
+    let ticking = false;
     const onScroll = () => {
-      isSticky.value = window.scrollY > 50;
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        isSticky.value = window.scrollY > 50;
+        ticking = false;
+      });
     };
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   });
 
@@ -34,18 +40,30 @@ export const Header = component$(() => {
       <h1 class={titleClasses}>Agustín Bereciartúa Castillo</h1>
       <p class={roleClasses}>{t.role}</p>
       <div class="flex justify-center flex-wrap gap-4 text-gray-300">
-        <a href="mailto:bereciartua.agustin@gmail.com" class="hover:text-purple-400 transition-colors">
-          <span class={isSticky.value ? '' : 'sm:hidden'}>📧</span>
+        <a
+          href="mailto:bereciartua.agustin@gmail.com"
+          aria-label="Email"
+          class="hover:text-purple-400 transition-colors"
+        >
+          <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>📧</span>
           <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>📧 bereciartua.agustin@gmail.com</span>
         </a>
         <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`>|</span>
-        <a href="/services.html" class="hover:text-purple-400 transition-colors">
-          <span class={isSticky.value ? '' : 'sm:hidden'}>🛠️</span>
+        <a
+          href="/services.html"
+          aria-label="Services"
+          class="hover:text-purple-400 transition-colors"
+        >
+          <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>🛠️</span>
           <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>{t.servicesTitle}</span>
         </a>
         <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`>|</span>
-        <a href="tel:+5693570521" class="hover:text-purple-400 transition-colors">
-          <span class={isSticky.value ? '' : 'sm:hidden'}>📱</span>
+        <a
+          href="tel:+56935705212"
+          aria-label="Call phone"
+          class="hover:text-purple-400 transition-colors"
+        >
+          <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>📱</span>
           <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>📱 +569 3570 5212</span>
         </a>
       </div>
