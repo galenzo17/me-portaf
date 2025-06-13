@@ -91,3 +91,25 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #5a5a5a;
 }
+@keyframes marioRun {
+  0% { transform: translateX(-10%); }
+  100% { transform: translateX(110%); }
+}
+
+.mario-runner {
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -5;
+}
+
+.mario-runner .mario {
+  display: inline-block;
+  animation: marioRun 4s linear infinite;
+  font-family: monospace;
+  white-space: pre;
+  color: #ffffff;
+}

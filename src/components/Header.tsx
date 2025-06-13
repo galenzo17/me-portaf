@@ -1,6 +1,7 @@
 import { component$, useContext } from '@builder.io/qwik';
 import { LanguageContext } from '../context/LanguageContext';
 import { translations } from '../i18n/translations';
+import { MarioRunner } from './MarioRunner';
 
 export const Header = component$(() => {
   const languageStore = useContext(LanguageContext);
@@ -9,6 +10,7 @@ export const Header = component$(() => {
   return (
     <header class="text-center mb-16 animate-slide-down relative pt-6">
       <div class="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl -z-10 transform-gpu"></div>
+      <MarioRunner />
       <h1 class="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
         Agustín Bereciartúa Castillo
       </h1>
