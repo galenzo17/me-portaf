@@ -14,8 +14,12 @@ export const Header = component$(() => {
           <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
             <rect x="1" y="3" width="6" height="10" fill="#ffffff" stroke="#000000" stroke-width="1" />
             <rect x="9" y="3" width="6" height="10" fill="#ffffff" stroke="#000000" stroke-width="1" />
+            <rect x="0" y="7" width="1" height="4" fill="#000000" />
+            <rect x="15" y="7" width="1" height="4" fill="#000000" />
             <rect x="3" y="13" width="2" height="2" fill="#000000" />
             <rect x="11" y="13" width="2" height="2" fill="#000000" />
+            <rect x="5" y="6" width="2" height="1" fill="#000000" />
+            <rect x="9" y="6" width="2" height="1" fill="#000000" />
           </svg>
         </div>
       </div>
