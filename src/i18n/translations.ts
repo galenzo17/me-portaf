@@ -9,6 +9,7 @@ export const translations = {
     frameworks: 'Frameworks',
     other: 'Other Skills',
     servicesTitle: 'Services',
+    gamesTitle: 'Games',
     servicesIntro: 'I offer software engineering and AI solutions tailored to your needs.',
     serviceList: [
       {
@@ -89,6 +90,7 @@ export const translations = {
     frameworks: 'Frameworks',
     other: 'Otras Habilidades',
     servicesTitle: 'Servicios',
+    gamesTitle: 'Juegos',
     servicesIntro: 'Ofrezco servicios de ingeniería de software e IA adaptados a tus necesidades.',
     serviceList: [
       {

@@ -14,6 +14,7 @@ The latest version of the portfolio is available at [agustin-dev.me](https://agu
 - **Social Links** – Quick access to GitHub and LinkedIn.
 - **Language Toggle** – Switch between English and Spanish.
 - **Interactive Effects** – A background that follows the mouse cursor.
+- **Asteroids Game** – Play a simple clone at `/games`.
 
 ## Getting Started
 
