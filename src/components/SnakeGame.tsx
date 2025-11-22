@@ -120,17 +120,18 @@ export const SnakeGame = component$(() => {
   });
 
   return (
-    <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col items-center justify-center p-4">
-      {/* Back button */}
-      <a
-        href="/"
-        class="absolute top-4 left-4 px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center gap-2 text-white"
-      >
-        <span>←</span> Back
-      </a>
-
-      <h1 class="text-4xl font-bold text-green-400 mb-4">Snake Game</h1>
-      <p class="text-gray-400 mb-4">Score: <span class="text-green-400 font-bold">{score.value}</span></p>
+    <div class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex flex-col items-center p-4 pb-20 md:pb-4 md:justify-center">
+      {/* Header with back button */}
+      <div class="w-full max-w-md flex items-center justify-between mb-4 mt-2 md:mt-0">
+        <a
+          href="/"
+          class="px-3 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors flex items-center gap-2 text-white text-sm"
+        >
+          <span>←</span> Back
+        </a>
+        <h1 class="text-2xl md:text-4xl font-bold text-green-400">Snake</h1>
+        <p class="text-gray-400 text-sm">Score: <span class="text-green-400 font-bold">{score.value}</span></p>
+      </div>
 
       {/* Game board */}
       <div
@@ -188,22 +189,8 @@ export const SnakeGame = component$(() => {
         )}
       </div>
 
-      {/* Mobile controls */}
-      <div class="mt-6 grid grid-cols-3 gap-2 md:hidden">
-        <div></div>
-        <button
-          onClick$={() => {
-            if (!isPlaying.value && !gameOver.value) {
-              isPlaying.value = true;
-              generateFood();
-            }
-            if (direction.value !== "DOWN") direction.value = "UP";
-          }}
-          class="p-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-2xl"
-        >
-          ↑
-        </button>
-        <div></div>
+      {/* Mobile controls - horizontal layout to avoid Android nav */}
+      <div class="mt-4 flex items-center gap-3 md:hidden">
         <button
           onClick$={() => {
             if (!isPlaying.value && !gameOver.value) {
@@ -212,22 +199,36 @@ export const SnakeGame = component$(() => {
             }
             if (direction.value !== "RIGHT") direction.value = "LEFT";
           }}
-          class="p-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-2xl"
+          class="p-3 bg-gray-700 active:bg-gray-600 rounded-lg text-xl"
         >
           ←
         </button>
-        <button
-          onClick$={() => {
-            if (!isPlaying.value && !gameOver.value) {
-              isPlaying.value = true;
-              generateFood();
-            }
-            if (direction.value !== "UP") direction.value = "DOWN";
-          }}
-          class="p-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-2xl"
-        >
-          ↓
-        </button>
+        <div class="flex flex-col gap-2">
+          <button
+            onClick$={() => {
+              if (!isPlaying.value && !gameOver.value) {
+                isPlaying.value = true;
+                generateFood();
+              }
+              if (direction.value !== "DOWN") direction.value = "UP";
+            }}
+            class="p-3 bg-gray-700 active:bg-gray-600 rounded-lg text-xl"
+          >
+            ↑
+          </button>
+          <button
+            onClick$={() => {
+              if (!isPlaying.value && !gameOver.value) {
+                isPlaying.value = true;
+                generateFood();
+              }
+              if (direction.value !== "UP") direction.value = "DOWN";
+            }}
+            class="p-3 bg-gray-700 active:bg-gray-600 rounded-lg text-xl"
+          >
+            ↓
+          </button>
+        </div>
         <button
           onClick$={() => {
             if (!isPlaying.value && !gameOver.value) {
@@ -236,7 +237,7 @@ export const SnakeGame = component$(() => {
             }
             if (direction.value !== "LEFT") direction.value = "RIGHT";
           }}
-          class="p-4 bg-gray-700 hover:bg-gray-600 rounded-lg text-2xl"
+          class="p-3 bg-gray-700 active:bg-gray-600 rounded-lg text-xl"
         >
           →
         </button>
