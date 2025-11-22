@@ -8,6 +8,13 @@ export const translations = {
     tools: 'Tools & Platforms',
     frameworks: 'Frameworks',
     other: 'Other Skills',
+    gameDemosTitle: 'Game Demos & Experiments',
+    gameDemosDescription: 'Fun side projects and coding experiments. Click to play!',
+    games: {
+      snake: 'Snake Game',
+      tetris: 'Tetris',
+      pong: 'Pong'
+    },
     servicesTitle: 'Services',
     servicesIntro: 'I offer software engineering and AI solutions tailored to your needs.',
     serviceList: [
@@ -88,6 +95,13 @@ export const translations = {
     tools: 'Herramientas y Plataformas',
     frameworks: 'Frameworks',
     other: 'Otras Habilidades',
+    gameDemosTitle: 'Demos de Juegos y Experimentos',
+    gameDemosDescription: 'Proyectos divertidos y experimentos de código. ¡Haz clic para jugar!',
+    games: {
+      snake: 'Juego de la Serpiente',
+      tetris: 'Tetris',
+      pong: 'Pong'
+    },
     servicesTitle: 'Servicios',
     servicesIntro: 'Ofrezco servicios de ingeniería de software e IA adaptados a tus necesidades.',
     serviceList: [

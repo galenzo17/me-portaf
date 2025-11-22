@@ -3,6 +3,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 import { Header } from "./components/Header";
 import { Experience } from "./components/Experience";
 import { Skills } from "./components/Skills";
+import { GameDemos } from "./components/GameDemos";
 import { SocialLinks } from "./components/SocialLinks";
 import { MouseFollow } from "./components/MouseFollow";
 import "./app.css";
@@ -16,6 +17,7 @@ export const App = component$(() => {
           <Header />
           <Experience />
           <Skills />
+          <GameDemos />
           <SocialLinks />
         </div>
       </div>
