@@ -6,17 +6,8 @@ const games = [
   {
     id: "snake",
     emoji: "🐍",
-    url: "https://galenzo17.github.io/snake-game/",
-  },
-  {
-    id: "tetris",
-    emoji: "🧱",
-    url: "https://galenzo17.github.io/tetris-game/",
-  },
-  {
-    id: "pong",
-    emoji: "🏓",
-    url: "https://galenzo17.github.io/pong-game/",
+    url: "/snake.html",
+    isLocal: true,
   },
 ];
 
@@ -38,8 +29,6 @@ export const GameDemos = component$(() => {
             <a
               key={game.id}
               href={game.url}
-              target="_blank"
-              rel="noopener noreferrer"
               class="group relative px-6 py-4 bg-gray-800/60 backdrop-blur-sm rounded-xl border border-gray-700/50 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/20"
             >
               <div class="flex items-center gap-3">
