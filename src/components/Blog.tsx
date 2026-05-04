@@ -61,14 +61,17 @@ export const Blog = component$(() => {
           <div class="text-gray-400 animate-pulse">Loading...</div>
         ) : (
           <article
-            class="prose prose-invert prose-purple max-w-none
+            class="prose prose-invert prose-purple max-w-none text-left
+              prose-h1:text-center prose-h1:text-4xl
               prose-headings:bg-clip-text prose-headings:text-transparent
               prose-headings:bg-gradient-to-r prose-headings:from-purple-400 prose-headings:to-pink-600
               prose-a:text-purple-400 prose-a:no-underline hover:prose-a:text-purple-300
               prose-code:text-pink-300 prose-code:bg-gray-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
               prose-pre:bg-gray-800/80 prose-pre:border prose-pre:border-gray-700
               prose-strong:text-gray-200
-              prose-blockquote:border-purple-500 prose-blockquote:text-gray-300"
+              prose-blockquote:border-purple-500 prose-blockquote:text-gray-300
+              prose-blockquote:text-center prose-blockquote:italic
+              prose-hr:border-gray-700"
             dangerouslySetInnerHTML={postContent.value}
           />
         )}
