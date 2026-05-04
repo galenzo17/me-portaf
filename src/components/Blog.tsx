@@ -12,10 +12,10 @@ interface BlogPost {
 
 const posts: BlogPost[] = [
   {
-    slug: 'demo-post',
-    title: 'Building Resilient APIs: Lessons from Production',
-    date: '2025-05-04',
-    excerpt: 'Key patterns and practices I\'ve learned building and maintaining APIs serving millions of requests in production environments.',
+    slug: 'nasa-level',
+    title: 'La búsqueda (imposible) del NASA level code',
+    date: '2026-05-04',
+    excerpt: 'Qué sobrevive de las reglas del JPL cuando trabajás en healthtech, con plazos reales y un equipo chico.',
   },
 ];
 
