@@ -9,16 +9,18 @@
     "preview": "serve dist"
   },
   "devDependencies": {
-    "serve": "^14.2.4",
-    "typescript": "~5.6.2",
-    "vite": "^5.4.10",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1"
+    "serve": "^14.2.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "~5.6.2",
+    "vite": "^5.4.10"
   },
   "dependencies": {
     "@builder.io/qwik": "^1.9.1",
+    "@tailwindcss/typography": "^0.5.19",
     "framer-motion": "^11.0.3",
+    "marked": "^18.0.3",
     "react-icons": "^5.0.1"
   }
 }

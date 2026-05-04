@@ -59,6 +59,15 @@ export const Header = component$(() => {
         </a>
         <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`}>|</span>
         <a
+          href="/blog.html"
+          aria-label="Blog"
+          class="hover:text-purple-400 transition-colors"
+        >
+          <span aria-hidden="true" class={isSticky.value ? '' : 'sm:hidden'}>&#9998;</span>
+          <span class={isSticky.value ? 'hidden' : 'hidden sm:inline'}>{t.blogTitle}</span>
+        </a>
+        <span class={`hidden sm:inline ${isSticky.value ? 'hidden' : ''}`}>|</span>
+        <a
           href="tel:+56935705212"
           aria-label="Call phone"
           class="hover:text-purple-400 transition-colors"

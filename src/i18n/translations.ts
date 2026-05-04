@@ -9,6 +9,9 @@ export const translations = {
     frameworks: 'Frameworks',
     other: 'Other Skills',
     servicesTitle: 'Services',
+    blogTitle: 'Blog',
+    blogBack: 'Back to posts',
+    blogReadMore: 'Read more',
     servicesIntro: 'I offer software engineering and AI solutions tailored to your needs.',
     serviceList: [
       {
@@ -89,6 +92,9 @@ export const translations = {
     frameworks: 'Frameworks',
     other: 'Otras Habilidades',
     servicesTitle: 'Servicios',
+    blogTitle: 'Blog',
+    blogBack: 'Volver a posts',
+    blogReadMore: 'Leer mas',
     servicesIntro: 'Ofrezco servicios de ingeniería de software e IA adaptados a tus necesidades.',
     serviceList: [
       {
