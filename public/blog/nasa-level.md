@@ -55,3 +55,7 @@ No es NASA level. Pero es un paso en esa dirección: mover lo crítico a un terr
 ---
 
 *No estoy escribiendo código de naves. Pero alguien en un quirófano está confiando en que mi parser entienda bien una fecha de vencimiento. Eso ya es bastante peso para tomarse en serio el oficio.* 🛡️
+
+---
+
+✍️ **Agustin Bereciartua Castillo**
