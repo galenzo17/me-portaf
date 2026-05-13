@@ -13,7 +13,7 @@ interface BlogPost {
 const posts: BlogPost[] = [
   {
     slug: 'medplum-modelo',
-    title: 'Medplum como modelo: por qué leer (y contribuir a) su repo me hace más sabio y humilde',
+    title: 'Medplum como modelo',
     date: '2026-05-13',
     excerpt: 'Por qué Medplum se volvió mi referencia para HL7/FHIR, y cómo contribuir a repos open source me bajó cambios de revoluciones al ego.',
   },
